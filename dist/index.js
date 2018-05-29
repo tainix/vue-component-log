@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["sd-vue-session"] = factory();
+		exports["vue-component-log"] = factory();
 	else
-		root["sd-vue-session"] = factory();
+		root["vue-component-log"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
