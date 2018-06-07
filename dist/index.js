@@ -84,34 +84,34 @@ exports.__esModule = true;
 exports.default = install;
 var VueLogger = {
 	beforeCreate: function beforeCreate() {
-		console.info('%s will be create', this.$options.name);
+		console.debug('%s will be create', this.$options.name);
 	},
 	created: function created() {
-		console.info('%s was created', this.$options.name);
+		console.debug('%s was created', this.$options.name);
 	},
 	beforeMount: function beforeMount() {
-		console.info('%s will be mount', this.$options.name);
+		console.debug('%s will be mount', this.$options.name);
 	},
 	mounted: function mounted() {
-		console.info('%s was mounted', this.$options.name);
+		console.debug('%s was mounted', this.$options.name);
 	},
 	beforeUpdate: function beforeUpdate() {
-		console.info('%s will ben update', this.$options.name);
+		console.debug('%s will be update', this.$options.name);
 	},
 	updated: function updated() {
-		console.info('%s was updated', this.$options.name);
+		console.debug('%s was updated', this.$options.name);
 	},
 	activated: function activated() {
-		console.info('%s was activated', this.$options.name);
+		console.debug('%s was activated', this.$options.name);
 	},
 	deactivated: function deactivated() {
-		console.info('%s was deactivated', this.$options.name);
+		console.debug('%s was deactivated', this.$options.name);
 	},
 	beforeDestroy: function beforeDestroy() {
-		console.info('%s will be destroy', this.$options.name);
+		console.debug('%s will be destroy', this.$options.name);
 	},
 	destroyed: function destroyed() {
-		console.info('%s was destroyed', this.$options.name);
+		console.debug('%s was destroyed', this.$options.name);
 	}
 };
 
