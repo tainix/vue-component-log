@@ -35,12 +35,18 @@ const VueLogger = {
 
 	destroyed() {
 		console.debug('%s was destroyed', this.$options.name)
-	}
+	},
 
-}
+	beforeRouteEnter(to, from, next) {
+		console.debug('%s will be route enter', this.$options.name)
+	},
+	beforeRouteUpdate(to, from, next) {
+		console.debug('%s will be route update', this.$options.name)
+	},
+	beforeRouteLeave(to, from, next) {
+		console.debug('%s will be route leave', this.$options.name)
+	},
 
-if (typeof window !== 'undefined' && window.Vue) {
-	window.Vue.use(AppMixin)
 }
 
 export default function install(Vue) {
