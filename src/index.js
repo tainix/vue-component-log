@@ -24,7 +24,6 @@ const VueLogger = {
 	activated() {
 		console.debug('%s was activated', this.$options.name)
 	},
-
 	deactivated() {
 		console.debug('%s was deactivated', this.$options.name)
 	},
@@ -32,21 +31,9 @@ const VueLogger = {
 	beforeDestroy() {
 		console.debug('%s will be destroy', this.$options.name)
 	},
-
 	destroyed() {
 		console.debug('%s was destroyed', this.$options.name)
 	},
-
-	beforeRouteEnter(to, from, next) {
-		console.debug('%s will be route enter', this.$options.name)
-	},
-	beforeRouteUpdate(to, from, next) {
-		console.debug('%s will be route update', this.$options.name)
-	},
-	beforeRouteLeave(to, from, next) {
-		console.debug('%s will be route leave', this.$options.name)
-	},
-
 }
 
 export default function install(Vue) {
